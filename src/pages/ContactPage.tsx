@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Mail, Clock, MessageCircle, ArrowRight } from 'lucide-react';
+import { Send, Clock, MessageCircle, ArrowRight } from 'lucide-react';
 import AssessmentForm from '@/components/AssessmentForm';
 import FaqAccordion from '@/components/FaqAccordion';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -8,7 +8,7 @@ import { useSEO } from '@/hooks/useSEO';
 import { faqPageJsonLd, breadcrumbJsonLd } from '@/lib/seo';
 import { useLanguage } from '@/context/LanguageContext';
 
-const ICONS = { Mail, Clock, MessageCircle };
+const ICONS = { Send, Clock, MessageCircle };
 
 const COPY = {
   en: {
@@ -18,10 +18,10 @@ const COPY = {
     eyebrow: 'GET IN TOUCH',
     headline: "Let's talk about",
     headlineAccent: 'your email migration.',
-    sub: 'Have a question before committing to anything? Email us directly. Ready to start? Jump straight to the free assessment below.',
+    sub: 'Have a question before committing to anything? Just fill out the form below. Ready to start? Jump straight to the free assessment.',
     startAssessment: 'Start a Free Assessment',
     cards: [
-      { icon: 'Mail', title: 'Email us directly', detail: 'hello@migratehive.com', description: 'For general questions, project inquiries, or just to say hello.' },
+      { icon: 'Send', title: 'Message us', detail: 'Use the form below', description: 'Fill out the quick form and we\'ll get back to you personally.' },
       { icon: 'Clock', title: 'Office hours', detail: 'Mon-Fri, 9am-6pm GMT', description: 'We reply to messages sent outside these hours the next business day.' },
       { icon: 'MessageCircle', title: 'Response time', detail: 'Within 1 business day', description: "Most inquiries get a personal reply the same day they're sent." },
     ],
@@ -35,7 +35,7 @@ const COPY = {
       },
       {
         question: 'Can I reach out with a general question instead of filling in the full assessment?',
-        answer: "Of course. Email us directly at hello@migratehive.com any time. If you'd rather use the form, every field except your message is there to help us respond faster — nothing is a hard blocker to reaching out.",
+        answer: "Of course. You don't need a confirmed plan to reach out — fill in just the required fields and use the message box for your question. Every field except your message is there to help us respond faster, not to gatekeep access.",
       },
       {
         question: 'Do you work with businesses outside your listed office hours timezone?',
@@ -54,10 +54,10 @@ const COPY = {
     eyebrow: 'تواصل معنا',
     headline: 'لنتحدث عن',
     headlineAccent: 'نقل بريدك الإلكتروني.',
-    sub: 'لديك سؤال قبل الالتزام بأي شيء؟ راسلنا مباشرة. جاهز للبدء؟ انتقل مباشرة إلى التقييم المجاني أدناه.',
+    sub: 'لديك سؤال قبل الالتزام بأي شيء؟ فقط املأ النموذج أدناه. جاهز للبدء؟ انتقل مباشرة إلى التقييم المجاني.',
     startAssessment: 'ابدأ تقييمًا مجانيًا',
     cards: [
-      { icon: 'Mail', title: 'راسلنا مباشرة', detail: 'hello@migratehive.com', description: 'لأسئلة عامة أو استفسارات عن المشاريع أو لمجرد إلقاء التحية.' },
+      { icon: 'Send', title: 'راسلنا', detail: 'استخدم النموذج أدناه', description: 'املأ النموذج السريع وسنرد عليك شخصيًا.' },
       { icon: 'Clock', title: 'ساعات العمل', detail: 'الإثنين-الجمعة، 9ص-6م بتوقيت غرينتش', description: 'نرد على الرسائل المرسلة خارج هذه الساعات في يوم العمل التالي.' },
       { icon: 'MessageCircle', title: 'وقت الاستجابة', detail: 'خلال يوم عمل واحد', description: 'تحصل معظم الاستفسارات على رد شخصي في نفس يوم إرسالها.' },
     ],
@@ -71,7 +71,7 @@ const COPY = {
       },
       {
         question: 'هل يمكنني التواصل بسؤال عام بدلاً من تعبئة التقييم الكامل؟',
-        answer: 'بالطبع. راسلنا مباشرة على hello@migratehive.com في أي وقت. إذا كنت تفضل استخدام النموذج، فكل حقل باستثناء رسالتك موجود لمساعدتنا على الرد بشكل أسرع — لا شيء يمنعك من التواصل.',
+        answer: 'بالطبع. لست بحاجة إلى خطة نقل مؤكدة للتواصل معنا — املأ الحقول المطلوبة فقط واستخدم خانة الرسالة لسؤالك. كل حقل باستثناء رسالتك موجود لمساعدتنا على الرد بشكل أسرع، وليس لمنعك من التواصل.',
       },
       {
         question: 'هل تتعاملون مع شركات خارج المنطقة الزمنية لساعات عملكم المذكورة؟',
@@ -156,7 +156,7 @@ export default function ContactPage() {
                     <Icon className="w-5 h-5 text-accent-400" />
                   </div>
                   <h3 className="font-display text-base font-semibold mb-1 text-white">{card.title}</h3>
-                  <p className="text-sm font-medium text-accent-400 mb-2" dir="ltr">{card.detail}</p>
+                  <p className="text-sm font-medium text-accent-400 mb-2">{card.detail}</p>
                   <p className="text-xs text-navy-400 leading-relaxed">{card.description}</p>
                 </motion.div>
               );

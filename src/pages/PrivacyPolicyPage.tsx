@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { useSEO } from '@/hooks/useSEO';
 import { breadcrumbJsonLd } from '@/lib/seo';
 import { useLanguage } from '@/context/LanguageContext';
@@ -134,10 +135,10 @@ const SECTIONS_EN: { heading: string; body: React.ReactNode }[] = [
           <li>Object to or restrict certain processing of your information</li>
         </ul>
         <p className="mt-4">
-          To exercise any of these rights, email us at{' '}
-          <a href="mailto:hello@migratehive.com" className="text-accent-400 hover:text-accent-300 transition-colors">
-            hello@migratehive.com
-          </a>. We will respond within a reasonable timeframe.
+          To exercise any of these rights, reach out via{' '}
+          <Link to="/contact" className="text-accent-400 hover:text-accent-300 transition-colors">
+            our contact form
+          </Link>. We will respond within a reasonable timeframe.
         </p>
       </>
     ),
@@ -176,10 +177,10 @@ const SECTIONS_EN: { heading: string; body: React.ReactNode }[] = [
     heading: '13. Contact Us',
     body: (
       <p>
-        If you have questions about this Privacy Policy or how we handle your information, contact us at{' '}
-        <a href="mailto:hello@migratehive.com" className="text-accent-400 hover:text-accent-300 transition-colors">
-          hello@migratehive.com
-        </a>.
+        If you have questions about this Privacy Policy or how we handle your information, reach out via{' '}
+        <Link to="/contact" className="text-accent-400 hover:text-accent-300 transition-colors">
+          our contact form
+        </Link>.
       </p>
     ),
   },
@@ -315,10 +316,10 @@ const SECTIONS_AR: { heading: string; body: React.ReactNode }[] = [
           <li>الاعتراض على بعض عمليات معالجة معلوماتك أو تقييدها</li>
         </ul>
         <p className="mt-4">
-          لممارسة أي من هذه الحقوق، يُرجى التواصل معنا عبر البريد الإلكتروني على{' '}
-          <a href="mailto:hello@migratehive.com" className="text-accent-400 hover:text-accent-300 transition-colors">
-            hello@migratehive.com
-          </a>. وسنرد عليك خلال مهلة زمنية معقولة.
+          لممارسة أي من هذه الحقوق، يُرجى التواصل معنا عبر{' '}
+          <Link to="/ar/contact" className="text-accent-400 hover:text-accent-300 transition-colors">
+            نموذج التواصل
+          </Link>. وسنرد عليك خلال مهلة زمنية معقولة.
         </p>
       </>
     ),
@@ -355,10 +356,10 @@ const SECTIONS_AR: { heading: string; body: React.ReactNode }[] = [
     heading: '13. اتصل بنا',
     body: (
       <p>
-        إذا كانت لديك أي أسئلة بشأن سياسة الخصوصية هذه أو بشأن كيفية تعاملنا مع معلوماتك، يُرجى التواصل معنا على{' '}
-        <a href="mailto:hello@migratehive.com" className="text-accent-400 hover:text-accent-300 transition-colors">
-          hello@migratehive.com
-        </a>.
+        إذا كانت لديك أي أسئلة بشأن سياسة الخصوصية هذه أو بشأن كيفية تعاملنا مع معلوماتك، يُرجى التواصل معنا عبر{' '}
+        <Link to="/ar/contact" className="text-accent-400 hover:text-accent-300 transition-colors">
+          نموذج التواصل
+        </Link>.
       </p>
     ),
   },

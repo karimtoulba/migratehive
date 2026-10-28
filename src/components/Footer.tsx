@@ -94,7 +94,6 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-white mb-4">{t.getInTouch}</h4>
             <ul className="space-y-2.5">
-              <li className="text-sm text-navy-300" dir="ltr">hello@migratehive.com</li>
               <li className="text-sm text-navy-300">{t.hours}</li>
               <li>
                 <Link

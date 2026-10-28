@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { useSEO } from '@/hooks/useSEO';
 import { breadcrumbJsonLd } from '@/lib/seo';
 import { useLanguage } from '@/context/LanguageContext';
@@ -219,10 +220,10 @@ const SECTIONS_EN: { heading: string; body: React.ReactNode }[] = [
     heading: '18. Contact Us',
     body: (
       <p>
-        If you have questions about these Terms, contact us at{' '}
-        <a href="mailto:hello@migratehive.com" className="text-accent-400 hover:text-accent-300 transition-colors">
-          hello@migratehive.com
-        </a>.
+        If you have questions about these Terms, reach out via{' '}
+        <Link to="/contact" className="text-accent-400 hover:text-accent-300 transition-colors">
+          our contact form
+        </Link>.
       </p>
     ),
   },
@@ -416,10 +417,10 @@ const SECTIONS_AR: { heading: string; body: React.ReactNode }[] = [
     heading: '18. اتصل بنا',
     body: (
       <p>
-        إذا كانت لديك أي أسئلة بشأن هذه الشروط، يرجى التواصل معنا على{' '}
-        <a href="mailto:hello@migratehive.com" className="text-accent-400 hover:text-accent-300 transition-colors">
-          hello@migratehive.com
-        </a>.
+        إذا كانت لديك أي أسئلة بشأن هذه الشروط، يرجى التواصل معنا عبر{' '}
+        <Link to="/ar/contact" className="text-accent-400 hover:text-accent-300 transition-colors">
+          نموذج التواصل
+        </Link>.
       </p>
     ),
   },

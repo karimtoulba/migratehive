@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 import { SERVICES, localeContent } from '@/data/services';
 import { useLanguage } from '@/context/LanguageContext';
 
-const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/hello@wadipurple.com';
+const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/9265ae9199cecab6540d3876a29ed956';
 
 type Status = 'idle' | 'loading' | 'success' | 'error';
 
@@ -37,7 +37,7 @@ const COPY = {
     message: 'Message',
     optional: '(optional)',
     messagePlaceholder: 'Tell us about your email migration goals, timeline, or any concerns...',
-    error: 'Something went wrong sending your request. Please try again, or email us directly at hello@wadipurple.com.',
+    error: 'Something went wrong sending your request. Please try again in a moment.',
     submitting: 'Submitting...',
     submit: 'Get My Free Assessment',
   },
@@ -69,7 +69,7 @@ const COPY = {
     message: 'رسالة',
     optional: '(اختياري)',
     messagePlaceholder: 'أخبرنا عن أهداف نقل بريدك الإلكتروني، والجدول الزمني، أو أي استفسارات...',
-    error: 'حدث خطأ أثناء إرسال طلبك. يرجى المحاولة مرة أخرى، أو راسلنا مباشرة على hello@wadipurple.com.',
+    error: 'حدث خطأ أثناء إرسال طلبك. يرجى المحاولة مرة أخرى بعد قليل.',
     submitting: 'جارٍ الإرسال...',
     submit: 'احصل على تقييمي المجاني',
   },
