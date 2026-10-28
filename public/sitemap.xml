@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://migratehive.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/ar</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/cloud-email-migration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/cloud-email-migration" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/cloud-email-migration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/cloud-email-migration" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/ar/cloud-email-migration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/cloud-email-migration" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/cloud-email-migration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/cloud-email-migration" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/google-workspace-migration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/google-workspace-migration" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/google-workspace-migration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/google-workspace-migration" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/ar/google-workspace-migration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/google-workspace-migration" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/google-workspace-migration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/google-workspace-migration" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/microsoft-365-migration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/microsoft-365-migration" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/microsoft-365-migration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/microsoft-365-migration" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/ar/microsoft-365-migration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/microsoft-365-migration" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/microsoft-365-migration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/microsoft-365-migration" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/zoho-migration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/zoho-migration" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/zoho-migration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/zoho-migration" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/ar/zoho-migration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/zoho-migration" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/zoho-migration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/zoho-migration" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/imap-email-migration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/imap-email-migration" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/imap-email-migration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/imap-email-migration" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/ar/imap-email-migration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/imap-email-migration" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/imap-email-migration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/imap-email-migration" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/about" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/about" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/ar/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/about" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/about" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/faqs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/faqs" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/faqs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/faqs" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/ar/faqs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/faqs" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/faqs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/faqs" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/contact" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/contact" />
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/ar/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/contact" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/contact" />
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/privacy-policy" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/ar/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/privacy-policy" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/terms-of-service</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/terms-of-service" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/terms-of-service" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/terms-of-service" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://migratehive.com/ar/terms-of-service</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://migratehive.com/terms-of-service" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://migratehive.com/ar/terms-of-service" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://migratehive.com/terms-of-service" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

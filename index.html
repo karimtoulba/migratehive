@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8fafc" />
+
+    <title>Business Email Migration Services – Zero Data Loss | MigrateHive</title>
+    <meta name="description" content="Professional business email migrations to Google Workspace, Microsoft 365, Zoho, or any IMAP platform — zero message loss, minimal downtime. Move your inbox, not your headaches." />
+    <link rel="canonical" href="https://migratehive.com/" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="MigrateHive" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="MigrateHive" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Business Email Migration Services – Zero Data Loss | MigrateHive" />
+    <meta property="og:description" content="Professional business email migrations to Google Workspace, Microsoft 365, Zoho, or any IMAP platform — zero message loss, minimal downtime. Move your inbox, not your headaches." />
+    <meta property="og:url" content="https://migratehive.com/" />
+    <meta property="og:image" content="https://migratehive.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Business Email Migration Services – Zero Data Loss | MigrateHive" />
+    <meta name="twitter:description" content="Professional business email migrations to Google Workspace, Microsoft 365, Zoho, or any IMAP platform — zero message loss, minimal downtime. Move your inbox, not your headaches." />
+    <meta name="twitter:image" content="https://migratehive.com/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MigrateHive",
+        "url": "https://migratehive.com",
+        "logo": "https://migratehive.com/favicon.svg",
+        "description": "Professional business email migration services — Google Workspace, Microsoft 365, Zoho, and IMAP — with zero message loss and minimal downtime.",
+        "email": "hello@migratehive.com",
+        "sameAs": []
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('migratehive-theme');
+          if (stored === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (e) {}
+
+        // Set lang/dir before paint so Arabic pages (/ar/*) don't flash LTR English
+        // styling before React mounts and LanguageContext takes over.
+        try {
+          var isAr = location.pathname === '/ar' || location.pathname.indexOf('/ar/') === 0;
+          if (isAr) {
+            document.documentElement.lang = 'ar';
+            document.documentElement.dir = 'rtl';
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

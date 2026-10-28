@@ -1,0 +1,290 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Thmanyah — used for Arabic pages (see --font-sans/--font-display overrides below). */
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('/fonts/thmanyah/thmanyahsans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('/fonts/thmanyah/thmanyahsans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('/fonts/thmanyah/thmanyahsans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('/fonts/thmanyah/thmanyahsans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('/fonts/thmanyah/thmanyahsans-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Serif Display';
+  src: url('/fonts/thmanyah/thmanyahserifdisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Serif Display';
+  src: url('/fonts/thmanyah/thmanyahserifdisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Serif Display';
+  src: url('/fonts/thmanyah/thmanyahserifdisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Serif Display';
+  src: url('/fonts/thmanyah/thmanyahserifdisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Serif Display';
+  src: url('/fonts/thmanyah/thmanyahserifdisplay-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  /*
+   * Theme tokens. Every color utility in this project (text-white, bg-navy-900/40,
+   * text-accent-400, ...) resolves through these CSS variables via tailwind.config.js,
+   * so the entire site re-themes from this one place. Light is the default look (bare
+   * :root, no class needed); dark is opt-in via a `.dark` class on <html>, toggled
+   * by ThemeContext.
+   *
+   * --color-black is intentionally fixed (identical in both themes): it's used only
+   * for button text sitting on the accent-colored surface, which needs to stay dark
+   * regardless of overall theme.
+   */
+  :root {
+    color-scheme: light;
+
+    --color-white: 15 23 42;
+    --color-black: 8 18 37;
+
+    --navy-50: 15 23 42;
+    --navy-100: 23 33 50;
+    --navy-200: 30 41 59;
+    --navy-300: 51 65 85;
+    --navy-400: 71 85 105;
+    --navy-500: 100 116 139;
+    --navy-600: 148 163 184;
+    --navy-700: 203 213 225;
+    --navy-800: 208 216 227;
+    --navy-900: 236 241 247;
+    --navy-950: 248 250 252;
+
+    --accent-50: 240 253 255;
+    --accent-100: 207 250 254;
+    --accent-200: 165 243 252;
+    --accent-300: 12 92 115;
+    --accent-400: 14 116 144;
+    --accent-500: 8 145 178;
+    --accent-600: 6 118 151;
+    --accent-700: 5 96 122;
+    --accent-800: 8 74 95;
+    --accent-900: 11 61 79;
+
+    --orange-400: 194 65 12;
+
+    --grid-line-opacity: 0.05;
+    --radial-glow-opacity: 0.1;
+
+    /*
+     * Font tokens, same CSS-variable pattern as the color theme above. `lang`/`dir`
+     * are set on <html> by LanguageContext, so Arabic pages automatically pick up
+     * Thmanyah here without any component needing to know which language is active.
+     */
+    --font-sans: Inter, system-ui, sans-serif;
+    --font-display: 'Space Grotesk', Inter, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  :root[dir='rtl'] {
+    --font-sans: 'Thmanyah Sans', Inter, system-ui, sans-serif;
+    --font-display: 'Thmanyah Serif Display', 'Thmanyah Sans', Inter, system-ui, sans-serif;
+    --font-mono: 'Thmanyah Sans', Inter, system-ui, sans-serif;
+  }
+
+  :root.dark {
+    color-scheme: dark;
+
+    --color-white: 255 255 255;
+    --color-black: 8 18 37;
+
+    --navy-50: 240 244 248;
+    --navy-100: 217 226 236;
+    --navy-200: 188 204 220;
+    --navy-300: 159 179 200;
+    --navy-400: 98 125 152;
+    --navy-500: 72 101 129;
+    --navy-600: 51 78 104;
+    --navy-700: 36 59 83;
+    --navy-800: 22 38 61;
+    --navy-900: 13 27 42;
+    --navy-950: 8 18 37;
+
+    --accent-50: 236 254 255;
+    --accent-100: 207 250 254;
+    --accent-200: 165 243 252;
+    --accent-300: 103 232 249;
+    --accent-400: 34 211 238;
+    --accent-500: 6 182 212;
+    --accent-600: 8 145 178;
+    --accent-700: 14 116 144;
+    --accent-800: 21 94 117;
+    --accent-900: 22 78 99;
+
+    --orange-400: 251 146 60;
+
+    --grid-line-opacity: 0.03;
+    --radial-glow-opacity: 0.08;
+  }
+
+  * {
+    @apply border-navy-700;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-navy-950 text-white font-sans;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  /* Smooth crossfade when the theme toggle flips light/dark. Scoped to color
+     properties only so it never interferes with Framer Motion's transform/opacity
+     animations. */
+  body,
+  header,
+  nav,
+  main,
+  footer,
+  section,
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+  }
+
+  ::selection {
+    @apply bg-accent-500/30 text-white;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, rgb(var(--color-white)) 0%, rgb(var(--accent-300)) 100%);
+  }
+
+  .text-gradient-accent {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, rgb(var(--accent-400)) 0%, rgb(var(--accent-600)) 100%);
+  }
+
+  .border-gradient {
+    border-image: linear-gradient(135deg, rgb(var(--accent-500) / 0.4), rgb(var(--accent-500) / 0.05)) 1;
+  }
+
+  .glass {
+    @apply bg-navy-900/60 backdrop-blur-xl border border-white/5;
+  }
+
+  .glass-strong {
+    @apply bg-navy-900/80 backdrop-blur-2xl border border-white/10;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:border-accent-500/30 hover:shadow-[0_0_40px_-12px_rgba(34,211,238,0.15)];
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .container-padding {
+    @apply px-6 md:px-10 lg:px-16;
+  }
+
+  .max-w-container {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .animate-dash-line {
+    stroke-dasharray: 6 4;
+    animation: dashMove 1.5s linear infinite;
+  }
+
+  @keyframes dashMove {
+    to {
+      stroke-dashoffset: -20;
+    }
+  }
+
+  .glow-dot {
+    @apply relative;
+  }
+
+  .glow-dot::before {
+    content: '';
+    @apply absolute inset-0 rounded-full;
+    background: inherit;
+    filter: blur(8px);
+    opacity: 0.6;
+    z-index: -1;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-navy-950;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-navy-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-navy-600;
+}
